@@ -114,10 +114,24 @@
     <!-- 
         022 Using Two-Way-Binding
      -->
-    <div id="app">
+    <!-- <div id="app">
         <input type="text" v-model="name">
         <p>{{ name }}</p>
+    </div> -->
+
+    <!-- 
+        023 Reacting to Changes with Computed Properties
+     -->
+    <div id="app">
+        <button v-on:click="counter++">Increase</button>
+        <button v-on:click="counter--">Decrease</button>
+        <button v-on:click="secondCounter++">Increase Second</button>
+        <p>Counter: {{ counter }} | {{ secondCounter }}</p>
+        <p>Result: {{ result() }} | {{ output }}</p>
     </div>
+
+
+
     <script src="css/app.js"></script>
 </body>
 
