@@ -42,15 +42,24 @@
     </div> -->
 
     <!-- 
-        014 Disable Re-Rendering with v-once
+        015 How to Output Raw HTML
+     -->
+    <!-- <div id="app">
+        <h1 v-once>{{title}}</h1>
+        <p>{{ sayHello() }} - <a v-bind:href="link">Google</a> </p> -->
+    <!-- horizontal line -->
+    <!-- <hr>
+        <p v-html="finishedLink"></p>
+    </div> -->
+
+    <!-- 
+        016 Listening to Events
      -->
     <div id="app">
-        <h1 v-once>{{title}}</h1>
-        <p>{{ sayHello() }} - <a v-bind:href="link">Google</a> </p>
-        <!-- horizontal line -->
-        <hr>
-        <p v-html="finishedLink"></p>
+        <button v-on:click="increase"> Click me! Value will increase from zero onward</button>
+        <p>{{ counter }}</p>
     </div>
+
     <script src="css/app.js"></script>
 </body>
 

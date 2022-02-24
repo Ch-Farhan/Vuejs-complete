@@ -38,18 +38,31 @@
 //     }
 // });
 
-// 014 Disable Re-Rendering with v-once
+// 015 How to Output Raw HTML
+// new Vue({
+//     el: '#app',
+//     data: {
+//         title: 'Hello World!',
+//         link: 'http://google.com',
+//         finishedLink: '<a href="http://google.com">Google</a>'
+//     },
+//     methods: {
+//         sayHello: function() {
+//             this.title = 'Hello!';
+//             return this.title;
+//         }
+//     }
+// });
+
+// 016 Listening to Events
 new Vue({
     el: '#app',
     data: {
-        title: 'Hello World!',
-        link: 'http://google.com',
-        finishedLink: '<a href="http://google.com">Google</a>'
+        counter: 0
     },
     methods: {
-        sayHello: function() {
-            this.title = 'Hello!';
-            return this.title;
+        increase: function() {
+            this.counter++;
         }
     }
 });
