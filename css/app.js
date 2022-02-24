@@ -12,10 +12,24 @@
 // });
 
 // 010 How the VueJS Template Syntax and Instance Work Together
+// new Vue({
+//     el: '#app',
+//     data: {
+//         title: 'Hello World!'
+//     },
+//     methods: {
+//         sayHello: function() {
+//             return this.title;
+//         }
+//     }
+// });
+
+// 012 Binding to Attributes
 new Vue({
     el: '#app',
     data: {
-        title: 'Hello World!'
+        title: 'Hello World!',
+        link: 'http://google.com'
     },
     methods: {
         sayHello: function() {

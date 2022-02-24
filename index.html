@@ -30,12 +30,16 @@
     <!-- 
         011 Accessing Data in the Vue Instance
      -->
-    <div id="app">
+    <!-- <div id="app">
         <p>{{ sayHello() }}</p>
+    </div> -->
+
+    <!-- 
+        012 Binding to Attributes
+     -->
+    <div id="app">
+        <p>{{ sayHello() }} - <a v-bind:href="link">Google</a> </p>
     </div>
-
-
-
 
     <script src="css/app.js"></script>
 </body>
