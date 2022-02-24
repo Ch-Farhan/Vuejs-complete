@@ -25,6 +25,20 @@
 // });
 
 // 012 Binding to Attributes
+// new Vue({
+//     el: '#app',
+//     data: {
+//         title: 'Hello World!',
+//         link: 'http://google.com'
+//     },
+//     methods: {
+//         sayHello: function() {
+//             return this.title;
+//         }
+//     }
+// });
+
+// 014 Disable Re-Rendering with v-once
 new Vue({
     el: '#app',
     data: {
@@ -33,6 +47,7 @@ new Vue({
     },
     methods: {
         sayHello: function() {
+            this.title = 'Hello!';
             return this.title;
         }
     }

@@ -37,10 +37,17 @@
     <!-- 
         012 Binding to Attributes
      -->
+    <!-- <div id="app">
+        <p>{{ sayHello() }} - <a v-bind:href="link">Google</a> </p>
+    </div> -->
+
+    <!-- 
+        014 Disable Re-Rendering with v-once
+     -->
     <div id="app">
+        <h1 v-once>{{title}}</h1>
         <p>{{ sayHello() }} - <a v-bind:href="link">Google</a> </p>
     </div>
-
     <script src="css/app.js"></script>
 </body>
 
