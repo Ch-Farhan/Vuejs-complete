@@ -68,6 +68,25 @@
 // });
 
 // 017 Getting Event Data from the Event Object
+// new Vue({
+//     el: '#app',
+//     data: {
+//         counter: 0,
+//         x: 0,
+//         y: 0
+//     },
+//     methods: {
+//         increase: function() {
+//             this.counter++;
+//         },
+//         updateCoordinates: function(event) {
+//             this.x = event.clientX;
+//             this.y = event.clientY;
+//         }
+//     }
+// });
+
+// 018 Passing your own Arguments with Events
 new Vue({
     el: '#app',
     data: {
@@ -76,8 +95,8 @@ new Vue({
         y: 0
     },
     methods: {
-        increase: function() {
-            this.counter++;
+        increase: function(step, event) {
+            this.counter += step;
         },
         updateCoordinates: function(event) {
             this.x = event.clientX;

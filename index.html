@@ -63,12 +63,20 @@
     <!-- 
         017 Getting Event Data from the Event Object
      -->
-    <div id="app">
+    <!-- <div id="app">
         <button v-on:click="increase"> Click me</button>
         <p>{{ counter }}</p>
         <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{y}}</p>
-    </div>
+    </div> -->
 
+    <!-- 
+        018 Passing your own Arguments with Events
+     -->
+    <div id="app">
+        <button v-on:click="increase(2, $event)"> Click me</button>
+        <p>{{ counter }}</p>
+        <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{y}}</p>
+    </div>
     <script src="css/app.js"></script>
 </body>
 
