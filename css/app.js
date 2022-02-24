@@ -240,9 +240,25 @@
 // });
 
 // 026 Dynamic Styling with CSS Classes - Basics
+// new Vue({
+//     el: '#app',
+//     data: {
+//         attachRed: false
+//     }
+// });
+
+// 027 Dynamic Styling with CSS Classes - Using Objects
 new Vue({
     el: '#app',
     data: {
         attachRed: false
+    },
+    computed: {
+        divClasses: function() {
+            return {
+                red: this.attachRed,
+                blue: !this.attachRed
+            };
+        }
     }
 });
