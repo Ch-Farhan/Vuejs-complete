@@ -1,3 +1,4 @@
+// 003 Extending the VueJS Application
 new Vue({
     el: '#app',
     data: {
