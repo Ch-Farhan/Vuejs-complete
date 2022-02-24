@@ -133,12 +133,20 @@
     <!-- 
         024 An Alternative to Computed Properties Watching for Changes
      -->
-    <div id="app">
+    <!-- <div id="app">
         <button v-on:click="counter++">Increase</button>
         <button v-on:click="counter--">Decrease</button>
         <button v-on:click="secondCounter++">Increase Second</button>
         <p>Counter: {{ counter }} | {{ secondCounter }}</p>
         <p>Result: {{ result() }} | {{ output }}</p>
+    </div> -->
+
+    <!-- 
+        025 Saving Time with Shorthands
+     -->
+    <div id="app">
+        <button @click="changeLink">Click To Change Link</button>
+        <a :href="link">Link</a>
     </div>
 
 
