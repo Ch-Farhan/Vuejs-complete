@@ -91,15 +91,25 @@
     <!-- 
         020 Listening to Keyboard Events
      -->
-    <div id="app">
+    <!-- <div id="app">
         <button v-on:click="increase(2, $event)"> Click me</button>
         <p>{{ counter }}</p>
         <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{y}} - <span v-on:mousemove.stop="">DEAD SPOT</span>
         </p>
         <input type="text" v-on:keyup.enter.space="alertMe">
+    </div> -->
+
+    <!-- 
+        021 Writing JavaScript Code in the Templates
+     -->
+    <div id="app">
+        <button v-on:click="increase(2, $event)"> Click me</button>
+        <button v-on:click="counter++"> Click me</button>
+        <p>{{ counter * 2 > 10 ? 'Greater than 10' : 'Smaller than 10'}}</p>
+        <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{y}} - <span v-on:mousemove.stop="">DEAD SPOT</span>
+        </p>
+        <input type="text" v-on:keyup.enter.space="alertMe">
     </div>
-
-
     <script src="css/app.js"></script>
 </body>
 
