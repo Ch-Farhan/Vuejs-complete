@@ -19,7 +19,7 @@ new Vue({
     },
     methods: {
         sayHello: function() {
-            return 'Hello!';
+            return this.title;
         }
     }
 });
