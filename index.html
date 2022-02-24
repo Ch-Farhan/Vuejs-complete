@@ -47,6 +47,9 @@
     <div id="app">
         <h1 v-once>{{title}}</h1>
         <p>{{ sayHello() }} - <a v-bind:href="link">Google</a> </p>
+        <!-- horizontal line -->
+        <hr>
+        <p v-html="finishedLink"></p>
     </div>
     <script src="css/app.js"></script>
 </body>
