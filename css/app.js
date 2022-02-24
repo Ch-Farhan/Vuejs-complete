@@ -227,14 +227,22 @@
 // });
 
 // 025 Saving Time with Shorthands
+// new Vue({
+//     el: '#app',
+//     data: {
+//         link: 'http://google.com'
+//     },
+//     methods: {
+//         changeLink: function() {
+//             this.link = 'http://apple.com';
+//         }
+//     }
+// });
+
+// 026 Dynamic Styling with CSS Classes - Basics
 new Vue({
     el: '#app',
     data: {
-        link: 'http://google.com'
-    },
-    methods: {
-        changeLink: function() {
-            this.link = 'http://apple.com';
-        }
+        attachRed: false
     }
 });
