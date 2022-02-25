@@ -244,14 +244,24 @@
     <!-- 
         038 Rendering Lists with v-for
      -->
-    <div id="app">
+    <!-- <div id="app">
         <div id="app">
             <ul>
                 <li v-for="ingredient in ingredients">{{ ingredient }}</li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
+    <!-- 
+        039 Getting the Current Index
+     -->
+    <div id="app">
+        <div id="app">
+            <ul>
+                <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+            </ul>
+        </div>
+    </div>
     <script src="css/app.js "></script>
 </body>
 
