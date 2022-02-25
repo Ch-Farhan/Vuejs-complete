@@ -3,10 +3,9 @@
 
 <head>
     <title>Monster Slayer</title>
-    <script src="https://npmcdn.com/vue@2.6.14/dist/vue.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> -->
-    <link rel="stylesheet" href="css/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+
+    <link rel="stylesheet" href="foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -16,10 +15,13 @@
             <div class="small-6 columns">
                 <h1 class="text-center">YOU</h1>
                 <div class="healthbar">
+
                     <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" :style="{width: playerHealth + '%'}">
                         {{ playerHealth }}
                     </div>
+
                 </div>
+
             </div>
             <div class="small-6 columns">
                 <h1 class="text-center">MONSTER</h1>
@@ -37,7 +39,7 @@
         </section>
         <section class="row controls" v-else>
             <div class="small-12 columns">
-                <button id="attack" @click="attack">ATTACK</button>
+                <button id="attack" v-on:click="attack">ATTACK</button>
                 <button id="special-attack" @click="specialAttack">SPECIAL ATTACK</button>
                 <button id="heal" @click="heal">HEAL</button>
                 <button id="give-up" @click="giveUp">GIVE UP</button>
@@ -53,6 +55,7 @@
             </div>
         </section>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
