@@ -182,10 +182,22 @@
     <!-- 
         029 Setting Styles Dynamically (without CSS Classes)
      -->
-    <div id="app">
+    <!-- <div id="app">
         <div class="demo" :style="{backgroundColor: color}"></div>
         <div class="demo" :style="myStyle"></div>
         <div class="demo"></div>
+        <hr>
+        <input type="text" v-model="color">
+        <input type="text" v-model="width">
+    </div> -->
+
+    <!-- 
+        030 Styling Elements with the Array Syntax
+     -->
+    <div id="app">
+        <div class="demo" :style="{backgroundColor: color}"></div>
+        <div class="demo" :style="myStyle"></div>
+        <div class="demo" :style="[myStyle, {height: width + 'px'}]"></div>
         <hr>
         <input type="text" v-model="color">
         <input type="text" v-model="width">
