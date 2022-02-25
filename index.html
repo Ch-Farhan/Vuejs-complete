@@ -255,13 +255,29 @@
     <!-- 
         039 Getting the Current Index
      -->
-    <div id="app">
+    <!-- <div id="app">
         <div id="app">
             <ul>
                 <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
             </ul>
         </div>
+    </div> -->
+
+    <!-- 
+        040 Using an Alternative v-for Syntax
+     -->
+    <div id="app">
+        <div id="app">
+            <ul>
+                <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+            </ul>
+            <template v-for="(ingredient, index) in ingredients">
+                <h1>{{ ingredient }}</h1>
+                <p>{{ index }}</p>
+            </template>
+        </div>
     </div>
+
     <script src="css/app.js "></script>
 </body>
 
