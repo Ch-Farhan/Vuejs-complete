@@ -171,13 +171,26 @@
     <!-- 
         028 Dynamic Styling with CSS Classes - Using Names
      -->
-    <div id="app">
+    <!-- <div id="app">
         <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
         <div class="demo" :class="{red: attachRed}"></div>
         <div class=" demo" :class="[color, {red: attachRed}]"></div>
         <hr>
         <input type="text" v-model="color">
+    </div> -->
+
+    <!-- 
+        029 Setting Styles Dynamically (without CSS Classes)
+     -->
+    <div id="app">
+        <div class="demo" :style="{backgroundColor: color}"></div>
+        <div class="demo" :style="myStyle"></div>
+        <div class="demo"></div>
+        <hr>
+        <input type="text" v-model="color">
+        <input type="text" v-model="width">
     </div>
+
     <script src="css/app.js "></script>
 </body>
 

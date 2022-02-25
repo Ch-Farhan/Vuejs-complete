@@ -264,17 +264,34 @@
 // });
 
 // 028 Dynamic Styling with CSS Classes - Using Names
+// new Vue({
+//     el: '#app',
+//     data: {
+//         attachRed: false,
+//         color: 'green'
+//     },
+//     computed: {
+//         divClasses: function() {
+//             return {
+//                 red: this.attachRed,
+//                 blue: !this.attachRed
+//             };
+//         }
+//     }
+// });
+
+// 029 Setting Styles Dynamically (without CSS Classes)
 new Vue({
     el: '#app',
     data: {
-        attachRed: false,
-        color: 'green'
+        color: 'gray',
+        width: 100
     },
     computed: {
-        divClasses: function() {
+        myStyle: function() {
             return {
-                red: this.attachRed,
-                blue: !this.attachRed
+                backgroundColor: this.color,
+                width: this.width + 'px'
             };
         }
     }
