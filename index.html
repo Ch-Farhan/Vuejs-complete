@@ -281,6 +281,28 @@
     <!-- 
         041 Looping through Objects
      -->
+    <!-- <div id="app">
+        <div id="app">
+            <ul>
+                <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+            </ul>
+            <hr>
+            <ul>
+                <li v-for="person in persons">
+                    <div v-for="(value, key, index) in person">{{ key }} : {{ value }} ({{ index }})</div>
+                </li>
+            </ul>
+            <hr>
+            <template v-for="(ingredient, index) in ingredients">
+                <h1>{{ ingredient }}</h1>
+                <p>{{ index }}</p>
+            </template>
+        </div>
+    </div> -->
+
+    <!-- 
+        042 Looping through a List of Numbers
+     -->
     <div id="app">
         <div id="app">
             <ul>
@@ -292,6 +314,7 @@
                     <div v-for="(value, key, index) in person">{{ key }} : {{ value }} ({{ index }})</div>
                 </li>
             </ul>
+            <span v-for="n in 10">{{ n }}</span>
             <hr>
             <template v-for="(ingredient, index) in ingredients">
                 <h1>{{ ingredient }}</h1>
