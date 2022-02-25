@@ -266,7 +266,7 @@
     <!-- 
         040 Using an Alternative v-for Syntax
      -->
-    <div id="app">
+    <!-- <div id="app">
         <div id="app">
             <ul>
                 <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
@@ -276,8 +276,29 @@
                 <p>{{ index }}</p>
             </template>
         </div>
-    </div>
+    </div> -->
 
+    <!-- 
+        041 Looping through Objects
+     -->
+    <div id="app">
+        <div id="app">
+            <ul>
+                <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+            </ul>
+            <hr>
+            <ul>
+                <li v-for="person in persons">
+                    <div v-for="(value, key, index) in person">{{ key }} : {{ value }} ({{ index }})</div>
+                </li>
+            </ul>
+            <hr>
+            <template v-for="(ingredient, index) in ingredients">
+                <h1>{{ ingredient }}</h1>
+                <p>{{ index }}</p>
+            </template>
+        </div>
+    </div>
     <script src="css/app.js "></script>
 </body>
 
