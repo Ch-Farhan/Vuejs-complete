@@ -281,18 +281,26 @@
 // });
 
 // 029 Setting Styles Dynamically (without CSS Classes)
+// new Vue({
+//     el: '#app',
+//     data: {
+//         color: 'gray',
+//         width: 100
+//     },
+//     computed: {
+//         myStyle: function() {
+//             return {
+//                 backgroundColor: this.color,
+//                 width: this.width + 'px'
+//             };
+//         }
+//     }
+// });
+
+// 034 Conditional Rendering with v-if
 new Vue({
     el: '#app',
     data: {
-        color: 'gray',
-        width: 100
+        show: true
     },
-    computed: {
-        myStyle: function() {
-            return {
-                backgroundColor: this.color,
-                width: this.width + 'px'
-            };
-        }
-    }
 });
